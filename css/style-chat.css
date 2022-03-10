@@ -1,0 +1,818 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  background: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.fas {
+  display: none;
+  float: right;
+  position: relative;
+  top: -21px;
+  left: -5px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.input-text {
+  /* input style here */
+  position: relative;
+}
+
+.form-expDate {
+  letter-spacing: 0.07em;
+}
+
+textarea {
+  outline: none;
+  display: block;
+  overflow: hidden;
+  resize: none;
+}
+
+.button-submit {
+  /* button submit style here */
+  display: block;
+  position: relative;
+  top: 5px;
+}
+
+.date-picker {
+  /* date picker styles */
+  text-transform: uppercase;
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 1px solid #00848b !important;
+  background: #00848b !important;
+  color: #ffffff !important;
+}
+/* .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: 1px solid #003eff;
+  background: #007fff;
+  font-weight: normal;
+  color: #ffffff;
+} */
+
+::-ms-reveal {
+  display: none;
+}
+
+.label-wrapper {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  clear: both;
+  margin-top: 0px !important;
+}
+.label-wrapper:first-of-type {
+  margin-top: 0;
+}
+
+.cx-widget input[type="radio"] {
+  margin-top: 6px;
+  position: relative;
+  top: 3px !important;
+}
+.radio-inline {
+  position: relative;
+  top: 0px;
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+.radiobtnwrapper {
+  position: relative;
+  width: 100%;
+  z-index: 9999;
+}
+
+.typing {
+  position: fixed;
+  bottom: 100px;
+  width: 100px;
+  height: auto;
+}
+.button-cancelcc,
+.button-paymentcc {
+  position: relative;
+  top: 80px;
+  /* margin-bottom: 60px!important; */
+  margin-top: -160px !important;
+}
+
+.form-paymentAmount {
+  position: relative;
+  margin-bottom: 10px !important;
+}
+
+.form-ccNumber {
+  position: relative;
+  margin-bottom: 0px !important;
+}
+
+/*widget styles */
+
+.cx-bubble {
+  background-color: #3168d2;
+}
+
+.cx-widget.cx-theme-blue,
+.cx-widget .cx-container {
+  color: #fdfdfd;
+  background: #1e5799;
+}
+
+.cx-widget.cx-theme-blue * {
+  border-color: #7db9e8;
+}
+
+.cx-webchat {
+  position: fixed;
+  bottom: 0;
+  width: 320px;
+  z-index: 999997;
+}
+
+.cx-webchat .cx-transcript .cx-message .cx-avatar {
+  content: url("../img/message-smile.png");
+    height: 40px;
+    width: 50px;
+    position: relative;
+    left: -10px;
+}
+.cx-webchat .cx-send,
+.cx-webchat .cx-start-cobrowse {
+  content: url("../img/sendButton.png");
+  height: 35px;
+  width: 65px;
+  position: absolute;
+  top: -3px;
+  right: -7px;
+}
+
+.cx-message.cx-system[data-message="Chat Started"] {
+  /*display: none;
+  height: 35px;
+  width: 85px;
+  left: 120px;
+  margin-top: 40px !important;
+ transform: scale(1.9);*/
+   color: #A5936E;
+  font-weight: bold;
+
+}
+
+.cx-message.cx-system[data-message="Chat Ended"] {
+  color: #A5936E;
+  font-weight: bold;
+}
+/*close and minimize button*/
+
+.cx-common-container.cx-minimize
+  .cx-buttons-window-control
+  button.cx-button-minimize {
+  /* display: inline-block; */
+  position: relative;
+  top: -5px !important;
+}
+.cx-common-container.cx-minimize
+  .cx-buttons-window-control
+  button.cx-button-maximize {
+  position: relative;
+  top: 6px;
+}
+.cx-webchat .cx-transcript .cx-message .cx-message-text {
+  font-family: "Roboto", sans-serif;
+  line-height: 18px;
+}
+
+/*
+buttons*/
+.cx-widget.cx-theme-light .cx-btn-primary {
+  color: #7f7f7f;
+  border-color: #dae1e8 !important;
+  background: #ffffff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="@bg_color_4",endColorstr="@bg_color_5",GradientType=0);
+  background-color: #ffffff;
+  margin-top: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.cx-widget.cx-theme-light .cx-btn-primary:hover {
+  background: #A5936E;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.cx-widget.cx-theme-light {
+  color: #444a52;
+  background-color: #fdfdfd;
+  scrollbar-face-color: #cccccc;
+  border-radius: 8px;
+
+  /* WCAG: non-text contrast for UI components - primary button focus state */
+
+  /* loader icon */
+}
+
+.form-securityCode {
+  position: relative;
+  top: -25px;
+  right: -50px;
+}
+
+.form-label-exp {
+  position: relative;
+  top: -60px;
+}
+
+.cx-widget .cx-btn {
+  border-radius: 3px;
+  font-size: 12px !important;
+}
+
+.cx-webchat
+  .cx-transcript
+  .cx-message-group
+  > .cx-message.cx-participant:last-child
+  .cx-bubble {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  padding-bottom: 0px;
+  padding-top: 13px;
+  line-height: 100%;
+}
+.cx-webchat
+  .cx-transcript
+  .cx-message-group
+  > .cx-message.cx-participant:first-child
+  .cx-bubble {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  margin-top: 15px !important;
+}
+
+.cx-widget.cx-theme-light .cx-theme {
+  border-color: #dae1e8 !important;
+}
+
+.cx-webchat.cx-theme-light .cx-message.cx-them .cx-bubble {
+  background-color: #f7f7f7;
+  color: #666666;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.cx-webchat.cx-theme-light .cx-message.cx-you .cx-bubble {
+  background-color: #537790;
+  color: #fff;
+  text-align: right;
+  width: fit-content;
+  word-break: break-all;
+  position: relative;
+}
+
+.cx-webchat
+  .cx-transcript
+  .cx-message-group
+  > .cx-message.cx-participant.cx-you
+  .cx-bubble {
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+  max-width: 87%;
+}
+
+.cx-webchat .cx-transcript .cx-message.cx-you {
+  text-align: -webkit-right;
+  font-size: 14px;
+}
+.cx-webchat .cx-transcript .cx-message.cx-you .cx-time {
+  text-align: right;
+}
+
+.cx-webchat .cx-transcript .cx-time {
+  margin-bottom: 15px;
+}
+.cx-webchat .cx-transcript .cx-message .cx-time {
+  font-size: 0.75em;
+  top: 15px;
+  position: relative;
+}
+.cx-webchat .cx-transcript .cx-message .cx-name {
+  color: #fff;
+}
+.cx-webchat
+  .cx-transcript
+  .cx-message-group
+  > .cx-message.cx-participant:first-child
+  .cx-bubble-arrow,
+.cx-webchat
+  .cx-transcript
+  .cx-message-group
+  > .cx-message.cx-participant:first-child
+  .cx-name {
+  display: none !important;
+}
+.cx-common-container .cx-titlebar {
+  background-color: #A5936E;
+  padding: 0px 0px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.cx-widget.cx-theme-light .cx-titlebar .cx-title {
+  color: #ffffff;
+  top: 675px;
+}
+.cx-widget.cx-theme-light .cx-titlebar .cx-title {
+  visibility: hidden;
+}
+.cx-common-container .cx-titlebar .cx-icon {
+  visibility: hidden;
+}
+.cx-common-container .cx-titlebar .cx-title:after {
+  visibility: visible;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  content: "Chat with Saudia";
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.cx-subtitle {
+  visibility: visible;
+  position: absolute;
+  top: 11px;
+  left: 110px;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 0px;
+}
+
+.cx-common-container .cx-buttons-window-control {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+}
+.cx-widget.cx-theme-light .cx-buttons-window-control .cx-svg-icon-tone1 {
+  fill: #ffffff;
+}
+
+.cx-icon.cx-button-minimize {
+  top: 12px;
+  position: relative;
+}
+
+.btnDislike {
+  position: absolute;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  top: 21.5px;
+}
+
+.btnLike {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+}
+.chatIcon {
+  position: absolute;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  top: 760px;
+  right: -100px;
+  transform: scale(0.1);
+}
+
+.fa-thumbs-down:before {
+    position: relative;
+    top: 108px!important;
+  }
+
+
+.cx-webchat .cx-form {
+  visibility: hidden;
+}
+.cx-webchat .cx-menu li .cx-inert {
+  visibility: hidden;
+}
+
+.cx-webchat div.cx-input-container {
+  padding-bottom: 13px !important;
+  padding-top: 13px !important;
+  margin-bottom: 6px;
+}
+
+.cx-emoji-hasmenu,
+.cx-webchat .cx-menu {
+  display: none !important;
+}
+
+.cx-webchat div.cx-input-container .cx-message-input {
+  position: relative;
+  top: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  left: -15px;
+}
+
+.cx-webchat div.cx-input-container .cx-message-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c6c6c6;
+  opacity: 1; /* Firefox */
+  font-size: 14px !important;
+}
+
+.cx-widget.cx-desktop .cx-input-focus {
+  border-width: 1px !important;
+  border-color: #dae1e8 !important;
+  box-shadow: 0 0px 0px #dae1e8;
+}
+
+.cx-widget.cx-theme-light .cx-branding *,
+.cx-widget.cx-theme-light .cx-footer * {
+  visibility: hidden;
+}
+
+/*.cx-widget input,
+.cx-widget select{
+  height: 56px;
+  border: 1px solid #b9c6d4!important;
+}*/
+/*widget styles */
+
+.cx-widget.cx-theme-light input {
+  border-color: #dae1e8 !important;
+  border-top-width: 1px !important;
+  border-right-width: 1px !important;
+  border-bottom-width: 1px !important;
+  border-left-width: 1px !important;
+  outline: none !important;
+}
+
+.cx-widget.cx-theme-light input::placeholder,
+.cx-widget.cx-theme-light textarea::placeholder {
+  color: #c6c6c6;
+  opacity: 1; /* Firefox */
+  font-size: 11px !important;
+}
+
+.cx-widget.cx-theme-light input:focus {
+  border-color: #dae1e8 !important;
+  outline: none !important;
+}
+
+.cx-widget.cx-theme-light .cx-btn-default {
+  margin-top: 3px !important;
+}
+.cx-common-container .cx-buttons-window-control button:focus {
+  outline: none !important;
+  border-top-width: 0px !important;
+  border-right-width: 0px !important;
+  border-bottom-width: 0px !important;
+  border-left-width: 0px !important;
+}
+
+/*.cx-webchat {
+position: absolute;
+}
+*/
+
+/*.cx-loading-container svg, .cx-loading-screen svg {
+    display: none!important;
+    -webkit-animation: cxloadingspin 4s linear infinite;
+    -moz-animation: cxloadingspin 4s linear infinite;
+    animation: cxloadingspin 4s linear infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: cxloadingspin;s
+}*/
+
+.tab {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+.cx-loading-screen {
+  content: url("../img/loadingIcon.gif");
+  height: 45px;
+  width: 68px;
+  position: absolute;
+  top: 340px !important;
+  left: 155px !important;
+}
+
+.cx-message.cx-system[data-message="Chat Ended"] {
+  position: relative;
+  top: 15px;
+}
+
+/*WIDGET CHAT WIDTH*/
+.cx-widget.cx-theme-light {
+  width: 100% !important;
+  max-width: 375px !important;
+}
+
+@media screen and (min-width: 376px) and (max-width: 480px) {
+  .cx-widget.cx-theme-light {
+    width: 100% !important;
+    max-width: 414px !important;
+  }
+  .cx-message.cx-system[data-message="Chat Started"] {
+    left: 110px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cx-message.cx-system[data-message="Chat Started"] {
+    left: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: none;
+  }
+}
+
+/*WIDGET CHAT HEIGHT*/
+
+/*.cx-webchat .cx-transcript {
+    border: 1px #A5936E solid;
+}*/
+
+.cx-transcript {
+  height: 80vh !important;
+  max-height: 652px !important;
+
+}
+
+/*Loading Page height*/
+.cx-webchat .cx-form-wrapper {
+  height: 80vh !important;
+  max-height: 669px !important;
+
+}
+
+ul.card_logos {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.cardTypeImages {
+  position: relative;
+  transform: scale(0.6);
+  right: -30px;
+}
+
+#card-element {
+  height: 40px;
+  overflow: hidden;
+}
+
+.card-brand-icon {
+  width: 35px;
+}
+
+.card-brand-icon-container {
+  left: 0;
+}
+
+.card-brand-icon-container {
+  pointer-events: none;
+  z-index: 2;
+}
+
+
+.card-brand-icon-container {
+  height: 100%;
+  text-align: center;
+  width: 1.5em;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.card-brand-icon {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  height: 100%;
+}
+
+.card-brand-icon-inner--front {
+  z-index: 2;
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+.card-brand-icon-inner {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+  width: 1.5em;
+}
+
+.card-brand-icon.is-loaded img,
+.card-brand-icon.is-loaded svg {
+  transition: opacity 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -webkit-transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1),
+    opacity 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1),
+    opacity 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -webkit-transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.card-brand-icon img,
+.card-brand-icon svg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.55em;
+  height: 1em;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+}
+.fa-credit-card {
+  display: none;
+}
+
+.fa-cc-visa {
+  content: url("../img/visa.png");
+  position: absolute;
+  left: 200px;
+  top: 24px;
+  transform: scale(0.6);
+}
+
+.fa-cc-mastercard {
+  content: url("../img/mastercard.png");
+  position: absolute;
+  left: 200px;
+  top: 24px;
+  transform: scale(0.6);
+}
+
+.fa-cc-amex {
+  content: url("../img/amex.png");
+  position: absolute;
+  left: 200px;
+  top: 24px;
+  transform: scale(0.6);
+}
+
+.fa-cc-discover {
+  display: none;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+cursor: pointer;
+}
+
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: 22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+right: 15px;
+border-radius: 3px 0 0 3px;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Caption text */
+.text {
+color: rgba(0, 0, 0, 0.8);
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: -25px;
+width: 100%;
+text-align: center;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+
+
+.active,
+.dot:hover {
+background-color: #717171;
+}
+
+
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+
+
+@-webkit-keyframes fade {
+from {
+opacity: 0.4;
+}
+to {
+opacity: 1;
+}
+}
+
+
+
+@keyframes fade {
+from {
+opacity: 0.4;
+}
+to {
+opacity: 1;
+}
+}
